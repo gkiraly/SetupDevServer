@@ -11,7 +11,8 @@
 # add the following line to the sudoers file
 # User privilege specification
 
-sudo sed -Ei 's/^#(User privilege specification.*)/a gkiraly  ALL=(ALL) ALL' /etc/sudoers
+sudo sed -i '/User privilege specification/a gkiraly  ALL\=\(ALL\) ALL' /etc/sudoers
+#sudo sed -Ei 's/^#(User privilege specification.*)/a gkiraly  ALL=(ALL) ALL' /etc/sudoers
 
 # sed '/^anothervalue=.*/a after=me' test.txt
 # sudo sed -Ei 's/^#(%saptb.*SU_ROOT.*)/\1/' /etc/sudoers
