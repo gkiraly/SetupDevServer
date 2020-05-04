@@ -41,10 +41,10 @@ done
 echo "Modify sshd_config ..."
 
 # Modify sshd_config
-#sed -i 's/#\?\(PerminRootLogin\s*\).*$/\1 no/' /etc/ssh/sshd_config
-#sed -i 's/#\?\(MaxAuthTries\s*\).*$/\1 4/' /etc/ssh/sshd_config
-#sed -i 's/#\?\(MaxSessions\s*\).*$/\1 3/' /etc/ssh/sshd_config
-#sed -i 's/#\?\(PasswordAuthentication\s*\).*$/\1 no/' /etc/ssh/sshd_config
+sed -i 's/#\?\(PermitRootLogin\s*\).*$/\1 no/' /etc/ssh/sshd_config
+sed -i 's/#\?\(MaxAuthTries\s*\).*$/\1 4/' /etc/ssh/sshd_config
+sed -i 's/#\?\(MaxSessions\s*\).*$/\1 3/' /etc/ssh/sshd_config
+sed -i 's/#\?\(PasswordAuthentication\s*\).*$/\1 no/' /etc/ssh/sshd_config
 
 echo "D O N E ! ! !"
 
